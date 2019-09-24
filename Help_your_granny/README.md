@@ -1,5 +1,5 @@
-###Help your granny
-Your granny, who lives in town X0, has friends. These friends are given in an array, for example: array of friends is
+### Help your granny
+*Your granny, who lives in town `X0`, has friends. These friends are given in an array, for example: array of friends is
 
 ```Swift
 [ "A1", "A2", "A3", "A4", "A5" ].
@@ -50,10 +50,10 @@ If a town Xi is not visited you will suppose that the triangle
 ![Image of Pythagorean theorem](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/480px-Pythagorean.svg.png)
 
 
-Task
+##### Task
 Can you help your granny and give her the distance to travel?
 
-Notes
+##### Notes
 If you have some difficulty to see the tour I made a non terrific but maybe useful drawing:
 
 alternative text
