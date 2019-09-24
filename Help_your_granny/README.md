@@ -46,7 +46,7 @@ If a town Xi is not visited you will suppose that the triangle
 
 X0Xi-1Xi+1 is still a right triangle.
 
-![Image of Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagoras#Pythagorean_theorem)
+![Image of Pythagorean theorem](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/480px-Pythagorean.svg.png)
 
 
 Task
