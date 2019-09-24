@@ -1,5 +1,5 @@
 ### Help your granny
-*Your granny, who lives in town `X0`, has friends. These friends are given in an array, for example: array of friends is
+Your granny, who lives in town `X0`, has friends. These friends are given in an array, for example: array of friends is
 
 ```Swift
 [ "A1", "A2", "A3", "A4", "A5" ].
