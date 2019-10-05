@@ -1,4 +1,5 @@
-Your granny, who lives in town X0, has friends. These friends are given in an array, for example: array of friends is
+### Help your granny
+Your granny, who lives in town `X0`, has friends. These friends are given in an array, for example: array of friends is
 
 ```Swift
 [ "A1", "A2", "A3", "A4", "A5" ].
@@ -14,13 +15,13 @@ or
 (C)
 {"A1", "X1", "A2", "X2", "A3", "X3", "A4", "X4"}
 ```
-which means A1 is in town X1, A2 in town X2... It can happen that we don't know the town of one of the friends.
+which means `A1` is in town `X1, A2` in town `X2...` It can happen that we don't know the town of one of the friends.
 
 Your granny wants to visit her friends and to know how many miles she will have to travel.
 
 You will make the circuit that permits her to visit her friends. For example here the circuit will contain:
 
-X0, X1, X2, X3, X4, X0 
+`X0, X1, X2, X3, X4, X0`
 and you must compute the total distance
 
 X0X1 + X1X2 + .. + X4X0.
@@ -36,22 +37,23 @@ or
 {"X1", "100.0", "X2", "200.0", "X3", "250.0", "X4", "300.0"}
 ```
 
-which means that X1 is at 100.0 miles from X0, X2 at 200.0 miles from X0, etc...
+which means that `X1 is at 100.0` miles from `X0, X2 at 200.0` miles from `X0`, etc...
 
-More fortunately (it's not real life, it's a story...), the towns X0, X1, ..Xn are placed in the following manner:
+More fortunately (it's not real life, it's a story...), the towns `X0, X1, ..Xn` are placed in the following manner:
 
-X0X1X2 is a right triangle with the right angle in X1, X0X2X3 is a right triangle with the right angle in X2, etc...
+`X0X1X2` is a right triangle with the right angle in `X1, X0X2X3` is a right triangle with the right angle in `X2`, etc...
 
 If a town Xi is not visited you will suppose that the triangle
 
-X0Xi-1Xi+1 is still a right triangle.
+`X0Xi-1Xi+1` is still a right triangle.
 
-<img: src: "https://en.wikipedia.org/wiki/Pythagoras#Pythagorean_theorem">
+![Image of Pythagorean theorem](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/480px-Pythagorean.svg.png)
 
-Task
+
+##### Task
 Can you help your granny and give her the distance to travel?
 
-Notes
+##### Notes
 If you have some difficulty to see the tour I made a non terrific but maybe useful drawing:
 
 alternative text
@@ -59,6 +61,6 @@ alternative text
 All languages
 See the data type of the parameters in the examples test cases.
 
-Towns can have other names that X0, X1, X2, ... Xn
+Towns can have other names that `X0, X1, X2, ... Xn`
 
 "tour" returns
