@@ -21,17 +21,15 @@ func for3NumbersSeparetByComma(_ s: String) -> ([Int?], [[Int?]]) {
   let numbers = s
     .components(separatedBy: CharacterSet.decimalDigits.inverted)
     .filter{ $0 != "" }
-  var new = [String]()
-  for n in numbers {
-    var buf = "", counter = 0
-    if n.count > 3 {
-      for char in n {
-        buf += [char]
-        if buf.count % 3 == 0 { new.append(buf); buf = ""; counter += 3 }
-        if buf.count == n.count - counter { new.append(buf)}
-      }
-    } else { new.append(n) }
-  }
-  let digitsInNumber = new.map { $0.map { String($0)} }
-  return (new.map { Int($0) }, digitsInNumber.map { $0.map{ Int($0)}})
+  let splitNum = numbers.map { spliter($0)}.flatMap{$0}
+  let digitsInNumber = splitNum.map { $0.map { String($0)} }
+  return (splitNum.map { Int($0) }, digitsInNumber.map { $0.map{ Int($0)}})
+}
+
+func spliter (_ str: String) -> [String] {
+ if str.count > 3 {
+   let t = str.map { $0 }
+   return [String(t[0...2])] + spliter(String(t[3..<t.count]))
+ }
+ return [str]
 }
