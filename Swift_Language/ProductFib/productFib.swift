@@ -12,3 +12,15 @@ func productFib(_ prod : UInt64) -> (UInt64,UInt64,Bool) {
     }
     return(x, y, false)
 }
+
+
+// with recursion
+func productFib(_ prod : UInt64) -> (UInt64,UInt64,Bool) {
+  return sequence(prod: prod)
+}
+
+func sequence(prod: UInt64, x: UInt64 = 0, y: UInt64 = 1) -> (UInt64,UInt64,Bool) {
+  guard !(x * y == prod) else { return (x, y, true) }
+  guard !(x * y > prod) else { return (x, y, false) }
+  return sequence(prod: prod, x: y, y: x + y)
+}
